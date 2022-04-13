@@ -1,0 +1,8 @@
+{:deps true
+ :dev-http {8000 "resources/public"}
+ :builds {:app {:target :browser
+                :modules {:main {:entries [rum-rules-repro.app]
+                                 :init-fn rum-rules-repro.app/init!}}
+                :devtools {:repl-pprint true}
+                :asset-path "/build/js"
+                :output-dir "resources/public/build/js"}}}
